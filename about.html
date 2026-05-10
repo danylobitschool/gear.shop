@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="goods.css">
+    <style>
+        .top-grid{
+            background-image: url(images/about\ us\ background.webp);
+            height: 60vh;
+        }
+        .personal{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(75px,200px));
+        
+            row-gap: 10vh ;
+        }
+        .item-pers{
+            width: minmax(75px,200px);
+            margin-left: 5vw;
+            
+        }
+        .item-pers img{
+            width: 100% ;
+            
+        }        
+        .description{
+            box-sizing: border-box;
+            width: 100%;
+            height: max-content;
+            padding:  50px ;
+        }
+        .description h2{
+            height: 100%;
+            width: 100%;
+            font-size: clamp(25px,5vw,100px);
+        }
+        .description p{
+            width: 100%;
+            font-size: clamp(20px,3vw,40px);
+        }
+        map{
+            border:5px solid black;
+            height: clamp(200px,30%,800px);
+            width: clamp(200px,100%,800px);
+        }
+    </style>
+</head>
+<body>
+    <header class="top-grid">
+        <nav>
+            <a href="index.html"> <img src="gear-hammer-svgrepo-com.svg" class="logo" alt="">            </a>
+            
+            <div class="menu">
+                <a href="index.html#eq" class="btn">Обладнання</a>
+                <a href="repair.html" class="btn">Ремонт</a>
+                <a href="about.html" class="btn">Про нас</a>
+                <a href="contacts.html" class="btn">Контакти</a>
+            </div>
+        </nav>
+            <div class="centergrid">
+                <h1>About company</h1>
+                
+            </div>
+    </header>
+    
+    <div class="description">
+        <h2>Gear Shop</h2>
+        <p>Gear Shop — ваш надійний партнер у світі авто. Пропонуємо широкий вибір автомобілів і якісних запчастин, гарантуємо професійний підхід, вигідні ціни та швидке обслуговування для кожного клієнта.</p>
+    </div>
+
+
+    <div class="personal">
+        <div class="item-pers">
+            <img src="images/people.avif" alt="">
+            <b>
+                <p>Adam Savage</p>
+            </b>
+            <p>Company Founder</p>
+        </div>
+        <div class="item-pers">
+            <img src="images/people 2.avif" alt="">
+            <b>
+                <p>Andrea Hebert</p>
+            </b>
+            <p>Product manager</p>
+        </div>
+        <div class="item-pers">
+            <img src="images/people1.avif" alt="">
+            <b>
+                <p>Anton Fry</p>
+            </b>
+            <p>Main engineer</p>
+        </div>
+        <div class="item-pers">
+            <img src="images/people 4.avif" alt="">
+            <b>
+                <p>Julian Thomas</p>
+            </b>
+            <p>Sales manager</p>
+        </div>
+        <div class="item-pers">
+            <img src="images/people 3.avif" alt="">
+            <b>
+                <p>Herminia Stein</p>
+            </b>
+            <p>HR</p>
+        </div>
+        <div class="item-pers">
+            <img src="images/peoplew.avif" alt="">
+            <b>
+                <p>Evangelina Mccann</p>
+            </b>
+            <p>Head of research department</p>
+        </div>
+    </div>
+
+
+<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2544.2215146682715!2d30.383537242791736!3d50.3810690437968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1777812352825!5m2!1suk!2sua" style=" border:5px solid black; height: clamp(200px,30%,800px); width: clamp(200px,100%,1200px);"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    
+    <footer>
+        <h3>+380639764129</h3>
+        <p>myawesomegmail@gmail.com </p>
+        <div class="Contacts"> 
+            <a href="" class="icon_link"> <i class="fab fa-facebook"></i>   </a>
+            <a href="" class="icon_link"><i class="fab fa-youtube-square"></i></a>
+            <a href="" class="icon_link">  <i class="fab fa-instagram"></i></a>
+            <a href="" class="icon_link"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,257 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(167, 255, 255);
+}
+.top-grid{
+    width: 100vw;
+    min-width: fit-content;
+    height: 100vh;
+    background-image: url(images/cwr-our-craftsmen-desktop.jpg);
+    background-size: cover;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr clamp(200px, 1fr, 800px) 1fr;
+}
+nav{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 10vh 1fr;
+    justify-content: flex-start; 
+    grid-column: span 3 ;
+}
+.menu{
+    display: grid;
+    gap: 10px;
+    height: 10vh;
+    grid-template-columns: repeat(auto-fit,minmax(100px,5vw));
+}
+.btn{
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.671);
+    color: azure;
+    text-decoration: none;
+    font-size: clamp(10px,3vh,30px);
+    min-width: fit-content;
+    border-radius: 20px;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+}
+.btn:hover{
+    background-color: rgb(18, 192, 183);
+    color: azure;
+}
+
+.logo{
+    width: clamp(40px,10vh,60px);
+    background-color: rgba(240, 248, 255, 0.844);
+    border-radius: 20px;
+    transition: all 1s;
+}
+.logo:hover{
+    width: clamp(40px,10vh,60px);
+    background-color: rgb(18, 192, 183);
+    border-radius: 20px;
+    transform: rotateZ(360deg);
+}
+.centergrid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: clamp(200px, 50vw, 800px);
+    grid-column: 2/3;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.774);
+    height: fit-content;
+    padding: clamp(0px, 3vw, 30px);
+    border-radius: 10px;
+
+    font-size: clamp(0.8rem, 0.9rem + 0.5vw, 1.125rem);
+}
+.centerbtn{
+    border-radius: 0px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.701);
+    color: azure;
+    font-size: larger;
+}
+.categories{
+    background-color: rgb(167, 255, 255);
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5vh;
+    column-gap: 5vw;
+    grid-template-rows: max-content 10vh  ;
+
+    }
+.catg-names{
+    display: flex;
+    grid-column: span 2;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+}
+.item{
+    display: grid;
+    overflow: hidden;
+    justify-items: center;
+	align-items: center;
+    border-radius: 10px;
+}
+.item img{
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+    transition: all 0.5s;
+}
+.item img:hover{
+    transform: scale(1.2);
+}
+.item h3{
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.842);
+    color: rgb(137, 255, 255);
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;
+	z-index: 2;
+    text-decoration: none;
+	display: grid;
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+
+.about-us {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px
+
+}
+
+.radio {
+	width: 100vw;
+	justify-content: center;
+	padding: 20px;
+	display: flex;
+	gap: 10px;
+}
+
+footer{
+    background-color: black;
+    width: 100vw;
+    height: 30vh;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.Contacts a{
+
+    font-size: 40px;
+    color: azure;
+
+}
+.Contacts a:hover{
+
+    font-size: 50px;
+    color: rgb(160, 215, 215);
+
+}
+.goods{
+    width: 100vw;
+    background-color: rgb(167, 255, 255);
+    display: grid;
+    grid-template-columns: minmax(100px,45vw) minmax(100px,45vw);
+    grid-template-rows: minmax(100px,40vh) minmax(100px,40vh);
+    row-gap: 10vh;
+    column-gap: 10vw;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* slides */
+
+.slides {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	overflow: hidden;
+
+
+}
+
+.width-slide {
+	width: calc(4*100vw);
+	display: flex;
+	flex-direction: row;
+	transition: all 0.3s ease-in;
+
+}
+
+.center-img {
+	width: 100vw;
+	display: flex;
+}
+
+.slider-img {
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 20px;
+}
+
+#r1:checked~.go {
+	transform: translateX(0);
+}
+
+#r2:checked~.go{
+	transform: translateX(-100vw)
+}
+
+#r3:checked~.go{
+	transform: translateX(-200vw)
+}
+
+#r4:checked~.go{
+	transform: translateX(-300vw);
+}
+
+.bar1 {
+	width: 50px;
+	height: 50px;
+	background-color:  rgba(15, 71, 71, 0.575);
+	border-radius: 100%;
+}
+
+input[name="hidden"] {
+	visibility: hidden;
+}
+
+.navigation {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
