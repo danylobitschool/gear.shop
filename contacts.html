@@ -15,9 +15,14 @@
         form{
             height: max-content;
             margin-bottom: 100px;
-        
+            font-size: larger;
             flex-direction: column;
             align-items: center;
+            margin-top: 10vh;
+        }
+        form h2{
+            justify-self: center;
+            color: rgba(0, 0, 0, 0.767);  
         }
         .contact{
             width: 100%;
@@ -26,22 +31,39 @@
             margin-top: 10vh;
             font-size: large;
             border: 0px;
+            background-color: rgba(127, 255, 212, 0.185);
+            transition: all 1s;
+        }
+        .contact::placeholder{
+            color: rgba(0, 0, 0, 0.815);
+        }
+        .contact:hover{
+            background-color: rgb(48, 179, 135);
+        }
+        .contact:focus{
+            border: 1px;
         }
         .submit{
-            background-color: rgba(255, 255, 255, 0.759);
+            background-color: rgba(133, 231, 235, 0.759);
             padding: 20px 30px;
             border-radius: 20px;
             transition: all 1s;
-            margin-top: 50px;
-            width: 30%;
-                        
+            margin-top: 50px;  
+            font-size: clamp(15px,5vw,20px);       
+            color: rgba(0, 0, 0, 0.767);  
         }
         .submit:hover{
-            background-color: rgba(70, 63, 63, 0.759);
+            background-color: rgba(99, 189, 159, 0.759);
             padding: 20px 30px;
             border-radius: 20px;
         }
-   
+        .map{
+            justify-self: center;
+            box-sizing: border-box;
+            border:5px solid black;
+            height:50%;
+            width: clamp(150px,90%,800px);
+        }
     </style>
 </head>
 <body>
@@ -63,7 +85,7 @@
     </header>
     
 <form action="">
-
+<h2>Залиште відгук</h2>
 <input type="text" placeholder="  Name" class="contact">
 <br>
 <hr>
@@ -74,14 +96,17 @@
 <input type="email" placeholder="  Email" class="contact">
 <br>
 <hr>
-<input type="submit" class="submit" >
+<textarea name="" id="" class="contact" placeholder="Ваші побажання"></textarea>
+<br>
+<hr>
+<input type="submit" class="submit" value="Надіслати контакти" >
 
 
 
 </form>
 
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8800.263586357489!2d30.364970428712375!3d50.425227471635544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cb936564f72b%3A0x42d890f465cb7f5d!2z0JTQvdGW0L_RgNC-!5e0!3m2!1suk!2sua!4v1777817724915!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8800.263586357489!2d30.364970428712375!3d50.425227471635544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cb936564f72b%3A0x42d890f465cb7f5d!2z0JTQvdGW0L_RgNC-!5e0!3m2!1suk!2sua!4v1777817724915!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
         <h3>+380639764129</h3>
         <p>myawesomegmail@gmail.com </p>

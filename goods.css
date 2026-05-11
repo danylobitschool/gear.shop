@@ -1,22 +1,30 @@
 .sales{
-    width: 100vw;
+    width: 100%;
     height: max-content;
     display: grid;
-    grid-template-columns: repeat(3, minmax(50px,25vw));
+    grid-template-columns: repeat(auto-fit, minmax(190px, 30%));
     row-gap: 5vh;
-    column-gap: 5vw ;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    column-gap: 3% ;
+    justify-content: center;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+
 }
 .products{
+    box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.134);
-    width: minmax(50px,25vw);    
-    padding: 2vw;
+    padding: 5%;
     border-radius: 20px;
+
 }
 .products img{
     width: 100%;
+    border-radius: 5px;
+}
+.products{
+    font-size: clamp(10px,3vh,30px);
+    font-family:  Roboto, sans-serif ;
 }
 map{
-    width: 100vw;
+    width: 100%;
 }

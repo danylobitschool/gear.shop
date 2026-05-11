@@ -17,10 +17,12 @@
             grid-template-columns: repeat(auto-fit,minmax(75px,200px));
         
             row-gap: 10vh ;
+            margin-top: 10vh;
+            margin-bottom: 10vh;
         }
         .item-pers{
             width: minmax(75px,200px);
-            margin-left: 5vw;
+            margin-left: 5%;
             
         }
         .item-pers img{
@@ -31,21 +33,16 @@
             box-sizing: border-box;
             width: 100%;
             height: max-content;
-            padding:  50px ;
+            padding:  clamp(10px,2%,50px) ;
         }
         .description h2{
             height: 100%;
             width: 100%;
-            font-size: clamp(25px,5vw,100px);
+            font-size: clamp(50px,10%,100px);
         }
         .description p{
             width: 100%;
             font-size: clamp(20px,3vw,40px);
-        }
-        map{
-            border:5px solid black;
-            height: clamp(200px,30%,800px);
-            width: clamp(200px,100%,800px);
         }
     </style>
 </head>
@@ -119,9 +116,6 @@
     </div>
 
 
-<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2544.2215146682715!2d30.383537242791736!3d50.3810690437968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1777812352825!5m2!1suk!2sua" style=" border:5px solid black; height: clamp(200px,30%,800px); width: clamp(200px,100%,1200px);"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-    
     <footer>
         <h3>+380639764129</h3>
         <p>myawesomegmail@gmail.com </p>
