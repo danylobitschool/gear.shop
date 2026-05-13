@@ -97,10 +97,12 @@ nav{
     text-align: center;
     flex-direction: column;
     justify-content: space-around;
-
+    font-size: clamp(0.8rem, 0.9rem + 0.5vw, 1.125rem);
+}
+.catg-names h2{
+    font-size: clamp(1.5rem, 1.5rem + 1vw, 4rem);
 
 }
-
 .goods{
     width: 100%;
     background-color: rgb(167, 255, 255);
